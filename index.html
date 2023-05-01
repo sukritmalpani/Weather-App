@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="input">
+      <input type="text" id="search" required />
+      <button>Search</button>
+    </div>
+    <div id="internetStatus"></div>
+    <div class="error"><span></span></div>
+    <div id="container">
+      <div class="cityDisplay">
+        <span></span>
+      </div>
+      <div class="tempDisplay">
+        <img src="" alt="" id="img" />
+        <span></span>
+        <div class="temp">
+          <span id="c"></span>
+          <span id="f"></span>
+        </div>
+      </div>
+      <div class="condition"><span></span></div>
+      <div class="updated"><span></span></div>
+      <div class="details">
+        <div class="feelslike">
+          <p>Feels Like:</p>
+          <span></span>
+          <div class="temp1">
+            <span id="c1"></span>
+            <span id="f1"></span>
+          </div>
+        </div>
+        <div class="wind">
+          <img src="images/wind.jpg" style="height: 50px" alt="" />
+          <!-- <p>Wind Speed:</p> -->
+          <span></span>
+          <div class="wind1">
+            <span id="mph"></span>
+            <span id="kph"></span>
+          </div>
+          <p id="direction"></p>
+          <img src="images/arrow.svg" style="height: 40px" id="arrow" alt="" />)
+        </div>
+        <div class="precipitation"><span></span></div>
+        <div class="visibility"><span></span></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
